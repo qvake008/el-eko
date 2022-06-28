@@ -16,10 +16,10 @@ export default function Block1() {
               та підвищення енергоефективності промислових підприємств України
             </p>
             <div className={styles.content__cards}>
-              <CardComp img='./images/card-img/1.svg' text='Електроенергія за найнижчими цінами та гнучким графіком оплати'/>
-              <CardComp img='./images/card-img/2.svg' text='Подання звернень'/>
-              <CardComp img='./images/card-img/3.svg' text='Енергетичний аудит комерційних, житлових, адміністративних та промислових приміщень.'/>
-              <CardComp img='./images/card-img/4.svg' text='Оператор даних комерційного обліку електронної енергії України.'/>
+              <CardComp img='/images/card-img/1.svg' text='Електроенергія за найнижчими цінами та гнучким графіком оплати'/>
+              <CardComp img='/images/card-img/2.svg' text='Подання звернень'/>
+              <CardComp img='/images/card-img/3.svg' text='Енергетичний аудит комерційних, житлових, адміністративних та промислових приміщень.'/>
+              <CardComp img='/images/card-img/4.svg' text='Оператор даних комерційного обліку електронної енергії України.'/>
             </div>
     </div>
   </Container>

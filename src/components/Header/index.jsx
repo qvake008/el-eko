@@ -26,9 +26,9 @@ const Header = () => {
                     <Navbar.Brand as={Link} to="/" className={styles.logo}>
                             <div className={styles.logo__main}>
                                 <h1 style={{ display: 'flex' , alignItems: 'center'}}><p style={{ color: '#498BBA' , marginBottom: '0' }}>ЕЛ</p><img style={{ height: '15px', transform: 'rotate(90deg)' , margin: '0 2px 4px 2px' }} src="./images/header/light-logo.svg" alt="light" />ЕКО</h1>
-                                <img className={styles.logo__main__img} src="./images/header/default-logo.svg" alt="logo" />
-                                <img className={styles.logo__main__img} src="./images/header/default-logo.svg" alt="logo" />
-                                <img className={styles.logo__main__img} src="./images/header/default-logo.svg" alt="logo" />
+                                <img className={styles.logo__main__img} src="/images/header/default-logo.svg" alt="logo" />
+                                <img className={styles.logo__main__img} src="/images/header/default-logo.svg" alt="logo" />
+                                <img className={styles.logo__main__img} src="/images/header/default-logo.svg" alt="logo" />
                             </div>
                             <p className={styles.logo__discription}>Постачальник електроенергії</p>
                     </Navbar.Brand>
