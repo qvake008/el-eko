@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/el-eko/static/css/main.466ba833.css",
-    "main.js": "/el-eko/static/js/main.b9fa4b3a.js",
+    "main.js": "/el-eko/static/js/main.9307d857.js",
     "index.html": "/el-eko/index.html",
     "main.466ba833.css.map": "/el-eko/static/css/main.466ba833.css.map",
-    "main.b9fa4b3a.js.map": "/el-eko/static/js/main.b9fa4b3a.js.map"
+    "main.9307d857.js.map": "/el-eko/static/js/main.9307d857.js.map"
   },
   "entrypoints": [
     "static/css/main.466ba833.css",
-    "static/js/main.b9fa4b3a.js"
+    "static/js/main.9307d857.js"
   ]
 }
