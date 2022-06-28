@@ -1,0 +1,133 @@
+@import "../../Styles/variables.scss";
+
+.nav_rigth {
+  display: flex;
+}
+
+.tell {
+  margin-right: 1px;
+  border: none;
+  cursor: pointer;
+  color: $text;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: $mainGrey;
+  border-radius: 10px 0 0 10px;
+  &:hover {
+    color: $text2;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $text;
+  &:hover {
+    color: $text2;
+  }
+}
+
+.phone {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $mainBlueHover;
+  }
+}
+
+.collbeack {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: $mainBlue;
+  padding: 10px 20px;
+  background: $mainSkyBlue;
+  border-radius: 0 10px 10px 0;
+}
+
+.collbeack::after {
+  content: "Замовити дзвінок";
+  display: inline-block;
+}
+
+.collbeack:hover {
+  color: $mainBlueHover;
+}
+
+@media screen and (max-width: 1186px) {
+  .nav_rigth {
+    display: flex;
+  }
+
+  .collbeack::after {
+    content: " ";
+    display: inline-block;
+    transition: 0.3s ease all;
+  }
+}
+
+@media screen and (max-width: 1053px) {
+  .nav_rigth {
+    display: flex;
+  }
+
+  .collbeack::after {
+    content: "Замовити дзвінок";
+    display: inline-block;
+    transition: 0.3s ease all;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .nav_rigth {
+    display: flex;
+  }
+
+  .collbeack::after {
+    content: " ";
+    display: inline-block;
+    transition: 0.3s ease all;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .nav_rigth {
+    display: flex;
+  }
+
+  .tell {
+    display: none;
+    margin-right: 1px;
+    transition: 0.3s ease all;
+  }
+
+  .collbeack {
+    display: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    color: $mainBlue;
+    padding: 10px 20px;
+    background: $mainSkyBlue;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+  }
+
+  .collbeack::after {
+    content: "Замовити дзвінок";
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .nav_rigth {
+    display: none;
+    transition: 0.3s ease all;
+  }
+}

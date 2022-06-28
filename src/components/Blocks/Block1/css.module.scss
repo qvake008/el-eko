@@ -1,0 +1,26 @@
+@import "../../../Styles/variables.scss";
+
+.content {
+  font-family: $openSans-font;
+  padding-top: 20px;
+  min-width: 260px;
+  max-width: 75rem;
+  margin: 20px auto;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__cards {
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

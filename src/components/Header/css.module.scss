@@ -1,0 +1,242 @@
+@import "../../Styles/variables.scss";
+
+.header {
+  height: $header-height;
+  background: $bg;
+  color: $text;
+  z-index: 1000;
+  width: 100%;
+  display: block;
+  padding: 0;
+
+  &__content {
+    max-width: 75rem;
+    min-width: 260px;
+    padding-bottom: 1.2rem;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 0 var(--color-ut-border-10, $shadowColor);
+    @include breakpoint(md) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 $spacing-sm;
+    }
+    transition: 0.3s ease padding;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    & > div {
+      white-space: nowrap;
+
+      &:nth-child(2) {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 992px) {
+        &:nth-child(2) {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+        }
+      }
+
+      &:nth-child(3) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    .header {
+      height: $header-height;
+      background: $bg;
+      color: $text;
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+
+      &__content {
+        max-width: 75rem;
+        min-width: 260px;
+        padding-bottom: 1.2rem;
+        margin: 0 auto;
+        padding: 0 $spacing-md;
+        justify-content: space-between;
+        box-shadow: 0 1px 0 0 var(--color-ut-border-10, $shadowColor);
+        @include breakpoint(md) {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 $spacing-sm;
+        }
+        transition: 0.3s ease padding;
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        & > div {
+          white-space: nowrap;
+          &:nth-child(2) {
+            display: grid;
+            background: $bg;
+          }
+
+          &:last-of-type {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  &__button__container {
+    display: none;
+    @include breakpoint(md) {
+      display: initial;
+    }
+  }
+  &__toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @include breakpoint(vv) {
+      display: none;
+    }
+    & > svg {
+      display: block;
+      font-size: 32px;
+    }
+  }
+
+  transition: 1s ease all;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 48px;
+  margin-right: 0;
+  &__main {
+    display: flex;
+    & h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0px 2px 0px -1px;
+      line-height: 1;
+      font-family: $Balsamiq-font;
+      color: $mainColor;
+    }
+    &__img {
+      height: 20px;
+      margin-top: 1px;
+    }
+  }
+
+  &__discription {
+    font-family: $openSans-font;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 0.9;
+  }
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+  top: $header-height;
+  display: none;
+  background: rgba($bg, 0.8);
+  text-align: center;
+  padding: $spacing-md 0;
+
+  &--open {
+    transition: 0.2s ease right;
+    right: 0;
+  }
+
+  &--close {
+    display: none !important;
+    transition: 0.2s ease right;
+  }
+
+  @include breakpoint(vv) {
+    position: static;
+    display: flex;
+    justify-content: center;
+    background: initial;
+    width: auto;
+    padding: 0;
+  }
+
+  &__button__container {
+    @include breakpoint(md) {
+    }
+    padding: $spacing-md;
+  }
+}
+
+.menu_btn {
+  text-decoration: none;
+  color: $text !important;
+  border-bottom: 2px solid $bg;
+  transition: opacity 0.2s ease 0s, color 0.2s ease 0s,
+    border-bottom 0.2s ease 0s;
+
+  &:hover {
+    color: $text2 !important;
+    border-bottom: 2px solid $mainColor;
+    transition: opacity 0.2s ease 0s, color 0.2s ease 0s,
+      border-bottom 0.2s ease 0s;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.Dropdown {
+  color: $text;
+  background-color: transparent;
+  &_active {
+    color: $text !important;
+    background: $mainColor;
+  }
+  &_active:hover,
+  &:focus,
+  &:active {
+    color: $text2 !important;
+    background: $mainColor;
+  }
+}
+
+.button {
+  font-weight: 500;
+  color: $mainColor;
+  border: 2px solid $mainColor;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $spacing-sm / 2;
+  cursor: pointer;
+
+  box-shadow: 0 0 0.5em 0 $mainColor;
+
+  &:active {
+    transform: scale(0.98);
+    border-radius: 0;
+  }
+  &:hover {
+    box-shadow: 0 0 0.75em 0 $mainColor;
+  }
+}

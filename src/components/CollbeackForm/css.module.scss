@@ -1,0 +1,17 @@
+@import "../../Styles/variables.scss";
+
+.collbeackModalBtn {
+  border: none;
+  color: $mainBlue;
+  padding: 10px 20px;
+  background: $mainSkyBlue;
+  border-radius: 10px;
+  &:hover {
+    background: $mainColor !important;
+    box-shadow: none !important;
+  }
+  &:active {
+    background: $mainColor !important;
+    box-shadow: none !important;
+  }
+}

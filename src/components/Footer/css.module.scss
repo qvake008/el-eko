@@ -1,0 +1,137 @@
+@import "../../Styles/variables.scss";
+
+.footer {
+  min-width: 275px;
+  padding: 2rem $spacing-md;
+  max-width: 75rem;
+  margin: 0 auto;
+  border-top: 1px solid var(--color-ut-border-10, rgba(0, 0, 0, 0.1));
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    max-width: 175px;
+    align-items: center;
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & h1 {
+      color: $text;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $openSans-font;
+    }
+
+    & a {
+      max-width: 100px;
+      text-decoration: none;
+      color: $text2;
+      border-bottom: 1px solid white;
+      font-size: 14px;
+
+      &:hover {
+        border-bottom: 1px solid $mainColor;
+        color: $text;
+      }
+    }
+  }
+
+  &__addres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+      color: $text;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $openSans-font;
+    }
+    & p:last-of-type {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 175px;
+    float: right;
+    align-items: center;
+    & h1 {
+      color: $text;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $openSans-font;
+    }
+
+    &__icon {
+      fill: $text2;
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+      &:hover,
+      &:focus,
+      &:active {
+        fill: $text2;
+      }
+    }
+
+    & a {
+      text-decoration: none;
+      color: $text2;
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      border-bottom: 1px solid white;
+      margin-bottom: 5px;
+
+      &:hover {
+        border-bottom: 1px solid $mainColor;
+        color: $text;
+      }
+    }
+
+    &__textstyle {
+      color: $text2;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    &__social {
+      display: flex;
+      gap: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-bottom: 50px;
+    &__links {
+      display: none;
+    }
+
+    &__addres {
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__contacts {
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      float: none;
+      margin-top: 20px;
+    }
+  }
+}
